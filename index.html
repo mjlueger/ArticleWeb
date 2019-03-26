@@ -8,17 +8,34 @@
     <title>Document</title>
 </head>
 <body>  
+     
     <div class="header">
         <div class="navbar">
+            
+            
+            <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <div class="logo">    
+                    <img src="/img/Longlogo_soft.png" alt="Logo"></div>   
+            </button>
 
-        <div class="logo">    
-        <img
-            src="/img/Longlogo_soft.png" alt="Logo"></div>
-       <div class="hamburger">     
-         <img 
-            src="/img/hamburger.png" alt="menu"> </div> 
+                <div class="dropdown">
+                    <button class="dropbtntop">  
+                        <div class="hamburger">
+                            <img src="/img/hamburger.png" alt="menu"> </div>
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">
+                          <img class="sidepanel" src="/img/Home.png" alt="Home">
+                      </a>
+                      <a href="#">
+                         <img class="sidepanel" src="/img/search.png" alt="Search">  
+                      </a>
+                    </div>                          
+                </div>        
+                
+
         </div>
-
     </div>
     <div class="content">
         <H1>Ice Loss From Antarctica has Sextupled Since the 1970's, New Research Finds</H1>
@@ -26,7 +43,7 @@
         <p class="authorname">By Chris Mooney and Brady Dennis</p>
 
         <div class="block"></div>
-            <video width="100%" height="auto" controls>
+            <video class="video" width="100%" height="auto" controls>
                 <source src="https://www.washingtonpost.com/video/national/health-science/listen-to-an-ice-shelf-melting/2018/10/21/8c17711e-d55d-11e8-8384-bcc5492fef49_video.html" type="video"><iframe width='480' height='290' scrolling='no' src='https://www.washingtonpost.com/video/c/embed/8c17711e-d55d-11e8-8384-bcc5492fef49' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </video>
             <div class="caption">
@@ -46,7 +63,7 @@
         <img class="bigimg" src="/img/glacier.jpg" alt="Glacier">  
         <div class="caption">
                 <h6>Icebergs and sea ice, seen from NASA’s Operation Icebridge aircraft, off the coast of the Antarctic Peninsula in November 2017.</h6>
-            <h6>Mario Tama/Getty Images</h6>
+            <h6 class="source">Mario Tama/Getty Images</h6>
         </div>
 
         <p>That kind of sea-level rise would result in the inundation of island communities around the globe, devastating wildlife habitats and threatening drinking-water supplies. Global sea levels have already risen seven to eight inches since 1900.</p>
@@ -55,11 +72,11 @@
             <p>That’s what the new research says is happening. Scientists came to that conclusion after systematically computing gains and losses across 65 sectors of Antarctica where large glaciers — or glaciers flowing into an ice shelf — reach the sea
             </p>   
 
-            <div class="caption"><h5>The Escalating Pace of Antarctic Ice Loss</h5></div>
+            <div class="captiontitle"><h5>The Escalating Pace of Antarctic Ice Loss</h5></div>
         <img class="bigimg" src="/img/graphbetter.png" alt="graph">
         <div class="caption">
              <h6>Annual Antarctic losses in billion metric tons. Every 360 billion tons equals one millimeter of sea level rise. </h6>
-            <h6>Source: Rignot et al, 2019, Proceedings of the National Academy of Sciences. Rignot et al, PNAS</h6></div>
+            <h6 class="source">Source: Rignot et al, 2019, Proceedings of the National Academy of Sciences. Rignot et al, PNAS</h6></div>
 
         <p>West Antarctica is the continent’s major ice loser. Monday’s research affirms that finding, detailing how a single glacier, Pine Island, has lost more than a trillion tons of ice since 1979. Thwaites Glacier, the biggest and potentially most vulnerable in the region, has lost 634 billion. The entire West Antarctic ice sheet is capable of driving a sea-level rise of 5.28 meters, or 17.32 feet, and is now losing 159 billion tons every year.</p>
         <p>    The most striking finding in Monday’s study is the assertion that East Antarctica, which contains by far the continent’s most ice — a vast sheet capable of nearly 170 feet of potential sea-level rise — is also experiencing serious melting.</p>
@@ -75,36 +92,57 @@
          <p>    “More work is needed to reconcile these new estimates,” said Beata Csatho, an Antarctic expert at the University at Buffalo who was an author of the prior study.</p> 
             <p>    The bottom line is that Antarctica is losing a lot of ice and that vulnerable areas exist across the East and West Antarctic, with few signs of slowing as oceans grow warmer. In particular, Rignot says, key parts of East Antarctica, the subject of less focus from researchers in the past, need a much closer look, and fast.</p> 
         <p>    “The traditional view from many decades ago is that nothing much is happening in East Antarctica,” Rignot said, adding, “It’s a little bit like wishful thinking.”</p>  
-          
+         
+        <div class="socialup">
+                <button class="dropbtnsocial"><div class="share">
+                        <img src="/img/share2.png" alt="share"></div></button>
+                <div class="socialup-content">
+                  <a href="https://www.facebook.com/">
+                    <img class="social" src="/img/facebook.png" alt="facebook">  </a>
+                  <a href="https://twitter.com/">
+                    <img class="social" src="/img/twitter.jpg" alt="twitter"> </a>
+                  <a href="#">
+                        <img class="social" src="/img/mail.png" alt="mail"> </a>
+                </div>
+              </div>
+        
 
         <div class="author">
-         <img class="authorimg"src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://s3.amazonaws.com/arc-authors/washpost/5be88f60-47b1-447e-968e-12aaa62b941e.png&w=200&h=200&t=20170517a" alt="Chris Mooney">
-            <h5>Chris Mooney is a reporter covering climate change, energy and the environment.</h5>
-
-        <img class="authorimg" src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://s3.amazonaws.com/arc-authors/washpost/e90c6bb9-dd9c-499c-83af-1ce4febe9bfe.png&w=200&h=200&t=20170517a" alt="Brady Dennis">
-            <h5>Brady Dennis is a reporter focusing on environmental policy and public health issues.</h5>
+            <div class="mooney">
+            <img class="authorimg"src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://s3.amazonaws.com/arc-authors/washpost/5be88f60-47b1-447e-968e-12aaa62b941e.png&w=200&h=200&t=20170517a" alt="Chris Mooney">
+                <h5>Chris Mooney is a reporter covering climate change, energy and the environment.</h5>
+       </div> <div class="dennis"></div>
+            <img class="authorimg" src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://s3.amazonaws.com/arc-authors/washpost/e90c6bb9-dd9c-499c-83af-1ce4febe9bfe.png&w=200&h=200&t=20170517a" alt="Brady Dennis">
+                <h5>Brady Dennis is a reporter focusing on environmental policy and public health issues.</h5>
         </div>
 
-         <a href="Share">Share</a>
+        <div class="dropup">
+                <button class="dropbtn">Most Popular</button>
+                <div class="droppop-content">
+                        <div class="dropup-content">
+                        <div class="popular">
+                            <img class="popularimg" src="/img/bitcoin.png" alt="bitcoin">
+                            <h6 class="populartext">Here’s Why So Many People are Investing in Bitcoin</h6>
+                            <img class="popularimg" src="/img/apple.png" alt="apple">
+                            <h6 class="populartext">An Exclusive Look at How Apple Treats Its Employees</h6 >
+                        </div>
+                </div>
+              </div></div>
 
-        <div class="popular">
-            <h3>Most Popular</h3>
-            <img src="/img/bitcoin.png" alt="bitcoin">
-            <h4>Here’s Why So Many People are Investing in Bitcoin</h4>
-            <img src="/img/apple.png" alt="apple">
-            <h4>An Exclusive Look at How Apple Treats Its Employees</h4>
-        </div>
-
-        <div class="recommended">
-            <h3>Recommended</h3>
-            <img src="/img/snake.png" alt="Beach">
-            <h4>Snakes Infest Local Beach</h4>
-            <img src="/img/phenomena.png" alt="Weird">
-            <h4>How This Rare Phenomena Takes Place</h4>
-        </div>
-
+              <div class="dropup2">
+                <button class="dropbtn2">Recommended</button>
+                <div class="droppop-content2">
+                        <div class="dropup-content2">
+                        <div class="recommended">
+                            <img class="recommendedimg" src="/img/snake.png" alt="Beach">
+                            <h6 class="recommendedtext">Snakes Infest Local Beach</h6>
+                            <img class="recommendedimg" src="/img/phenomena.png" alt="Weird">
+                            <h6 class="recommendedtext">How This Rare Phenomena Takes Place</h6 >
+                        </div></div>
+                </div>
+            
+            </div>
     </div>
-
     <script src="/js/script.js"></script>
 </body>
 </html>
